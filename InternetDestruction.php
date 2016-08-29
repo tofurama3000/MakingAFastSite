@@ -1,0 +1,19 @@
+<h1>Would the internet be destroyed by Zombies?<h1>
+<p>Sort of yes, sort of no. The internet was designed to be robust and to continue to operate, even if main segments are taken down. However, that does mean that certain regions can lose their current internet connection. The best example of what would happen and how people would respond is when Egypt cut off internet in 2011.
+<h2>Taking down the Internet</h2>
+<p>Rule #1 of an Apocalypse is to assume anything important will be destroyed. The internet is important, so we assume it will be destroyed. Eventually. Maybe. It might just be taken down to Dial-Up speeds. But dial-up speeds would be aweful (I can't watch the latest episodes of Agents of Shield in 4k anymore?). But how the internet goes down will determine it's effects.
+<h3>Different Ways to take the Internet Down</h3>
+<p>I'm taking a lot of these speculations from an article in <a href="http://arstechnica.com/tech-policy/2011/01/how-egypt-or-how-your-government-could-shut-down-the-internet/">arstechnica</a> and summarizing. Basically, there are four main ways to take down the internet:
+<ol>
+<li>Cut all external Cables
+<p>This seems rather easy, except for the fact that most of these cables go through deep waters. Of course, the undead don't need to breath, they just need to fight/infect sharks, fight currents, etc. just to reach them. Totally possible. It will just make it so you can only communicate to sites and people in your country.</li>
+<li>Remove BGPs
+<p>BGPs allow your nation to communicate to other nations. This is done by reconfiguring routers, or just smashing all routers that function as a BGP. The later is more practicle for zombies, especially if all organizations that maintain BGPs have a "Bring your zombie-fied friend to work" day. Again, it'll only affect the communication outside of your country.</li>
+<li>Take out ISPs
+<p>An ISP is an Internet Service Provider, like Comcast XFinity or CenturyLink. They're big and all over nations or the world. They make their money with guaranteed connectivity so they add in plenty of safety features. However, they can't be everywhere at once, and will have to send out humans to repair damaged cables or connect more people to the network. Which means that if zombies start chewing on some cables from Comcast, you may not be streaming the Walking Dead on Netflix anytime soon.</li>
+<li>Takeout DNS servers
+<p>A DNS server allows people on different networks to communicate with eachother. In otherwords, without DNS servers you wouldn't be able to use Facebook, Twitter, Google, or any website that wasn't hosted in your own basement. Different countries have different amounts of these. Egypt had three main ones - easy enough for a zombie to count. The U.S. and Europe have dozens - a little harder. Again, this will probably make things spotty in some areas.</li>
+<li>Take out the power
+<p>Not really destroying the internet, but if your phone runs out of batteries and you can't charge it, it's pretty much the same effect. If an ISP loses power, they can't provide internet service. If all the cities with DNS servers lose power, it will affect everyone. Not too difficult for a mindless zombie. It just needs to find those high voltage lines, and then use that chainsaw from the former lumberjack.</li>
+<h2>What happens when the internet goes down?<h2>
+<p>Let's assume that the mindless-zombies do take it down, or they still remember how to Tweet and they start taking up all the bandwidth leaving none for the actual living (I mean, which zombie doesn't want to share 4k selfies taken with the iPhone they got from their last meal?). Eiter way, the living can't get to the internet using the traditional methods. So, how do we organize attacks against zombies, tell people of safe bases, or announce that we found the cure?
