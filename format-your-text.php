@@ -27,12 +27,12 @@
 &lt;em&gt;Our&lt;/em&gt; &lt;small&gt;team&lt;/small&gt; &lt;mark&gt;will&lt;/mark&gt; &lt;del&gt;help&lt;/del&gt; &lt;ins&gt;guarantee&lt;/ins&gt; &lt;sub&gt;your&lt;/sub&gt; survival of &lt;sup&gt;any&lt;/sup&gt; zombie apocalypse!
 </pre>
 <h1>Sections</h1>
-<p>At times our content is split into sections and has different levels of importance. For example, we may have a section about creating a survival base, and then inside that we may have a section about creating a survival base in urban areas and another about rural areas. These different levels of sections can be represented with header tags.
+<p>At times our content is split into sections and has different levels of importance. For example, if we're making a home page for a sports team, we'll want a section for the team bio, a section for awards, and a section for athletes. In the team bio, we might have a mission statement, history, recent and upcoming games, etc.
 <h2>Header Tags</h2>
 <p>Header tags are done with &lt;h#&gt; where the # is a number from 1 to 6. The number represents the level of importance, with 1 being the most important (or outermost). Think of it as the 1 is what you should read first, and then the 2, and then the 3.
 <p>An example is the following:
 <pre>
-&lt;h1&gt;Welcome zombie survivors&lt;/h1&gt;
+&lt;h1&gt;Welcome to My Site&lt;/h1&gt;
 </pre>
 <p>Header tags look like the following:
 <h1>Header 1</h1>
@@ -43,9 +43,9 @@
 <h6>Header 6</h6>
 <p>As you can see, header tags get smaller the bigger the number.
 <h1>Paragraphs</h1>
-<p>Paragraphs split your text into paragraphs, and add space afterwards. However, they do not indent your paragraph (you may or may not like this). We'll discuss indenting paragraphs when we talk about CSS. Below is an example of how to use a paragraph:
+<p>Paragraphs split your text into paragraphs and add space afterward. They do not indent your paragraph (you may or may not like this). Paragraphs have a start tag (&lt;p&gt;) and an end tag (&lt;p&gt;). The end tag specifies when a paragraph should end. Below is an example of how to use a paragraph:
 <pre>
-&lt;p&gt;Our goal is to survive the zombie apocalypse and save humanity. We do this by building bases, organizing anti-zombie strikes, and being cool while we do it.&lt;/p&gt;
+&lt;p&gt;Our goal is to provide great sports entertainment for our fans. We do this by teamwork, playing hard, and being cool while we do it.&lt;/p&gt;
 </pre>
 <h1>Line Breaks</H1>
 <p>At times we just want to add in a line break without adding in extra space afterwards,<br> like so. This is done with the &lt;br&gt; tag. This tag doesn't need any content or end tag. You can optionally add in a slash before the "&gt;" like so: "&lt;br/&gt;"
@@ -63,7 +63,7 @@ This is an item with a number
 &lt;/li&gt;
 &lt;/ol&gt;
 </pre>
-<p>Try adding a header to your zombie-apocalypse page, followed by a paragraph or two about how to survive the apocalypse or describing your zombie-fighting squad. Use formatting to emphasize different parts of your text.
+<p>Try adding a header to your page, followed by a paragraph or two about who you are and what you like to do. Use formatting to emphasize different parts of your text.
 <p>Continue with <a href="advanced-formatting.php">Advanced Formatting</a>.
 </div>
 <?php require_once ('foot.php'); ?>

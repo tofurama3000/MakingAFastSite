@@ -1,7 +1,5 @@
 <style>
 body{
-	background:#200;
-	color:#fff;
 	font-family: Calabri, Arial, Sans-Serif;
 }
 #bg{
@@ -10,7 +8,7 @@ body{
 	 z-index:-9999;
 	 top:0;
 	 left:0;
-	 background:#900;
+	 background:#040;
 	 height:50px;
 }
 .cntr{
@@ -66,7 +64,7 @@ body{
 }
 a{
 	text-decoration:none;
-	color:red;
+	color:green;
 	font-weight:700;	
 }
 a:hover{

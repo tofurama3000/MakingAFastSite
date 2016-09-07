@@ -4,8 +4,8 @@
 <title>Try HTML</title>
 <style>
 body{
-	background:#200;
-	color:#fff;
+	background:#fff;
+	color:#111;
 	font-family: Calabri, Arial, Sans-Serif;
 }
 h1{font-size:22pt;}
@@ -28,17 +28,21 @@ h1{font-size:22pt;}
 	}
 }
 textarea{
-	border:2px solid #fff;
-	background:#200;
-	color:#fff;
+	border:2px solid #000;
+	padding: 10px;
 }
 #submit{
 	padding:15px 30px;
-	background:#f00;
+	background:#040;
 	border-radius:22px;
 	border:0px;font-size:16pt;
 	color:#fff;
+	cursor:pointer;
 	font-weight:bold;
+}
+#submit:hover{
+	background:#0d0;
+	color:#000;
 }
 </style>
 </head>

@@ -13,7 +13,7 @@ li{
 <div class="cntr">
 <?php require_once('menu.php'); ?>
 <h1>HTML</h1>
-<p>This site has several pages on HTML. We decided to make it easy for you to find what you're looking for by putting it in one place. Here it is:
+<p>Want to learn basic HTML? Well then look at any of the pages below!
 <div class="c2Md">
 <ul>
 <li><a href="into-html.php">Into HTML</a></li>

@@ -5,7 +5,7 @@
 <div><a href="/index.php">Home</a></div>
 <div><a href="/optimization-list.php">Optimize</div>
 <div><a href="/html-list.php">HTML</a></div>
-<div><a href="/try-html.php">Try It!</a></div>
+<div><a href="/try-html.php">Try HTML</a></div>
 </div>
 <div id="navm">
 <div><a href="/index.php">Home</a></div>

@@ -28,11 +28,11 @@
 <a href="https://www.udacity.com/" target="_blank">Udacity</a>
 </li>
 <li>
-<a href="http://stackoverflow.com/" target="_blank">stackoverflow</a>
+<a href="http://stackoverflow.com/" target="_blank">StackOverflow</a>
 </li>
 </ul>
-<p>Each one of those has different purposes. I use w3schools as a reference for what's available. I also used their tutorials to learn HTML, CSS, and JavaScript. Udacity is great for learning some of the basic principles of web design, and learning how to make quality web sites. Stackoverflow is great for getting answers to questions, but it's also good for helping others with questions as well.
-<p>I also use tools that let me test my code inside a web browser, since it helps me make changes quickly. This site does provide a <a href="try-html.php">live testing tool</a> that does precisley that, and there are other tools available as well.
+<p>Each one of those has different purposes. I use w3schools as a reference for HTML, CSS, and JavaScript. I also use their tutorials to learn HTML, CSS, and JavaScript. Udacity is great for learning some of the basic principles of web design and learning how to make quality websites after you learn the basics of HTML, CSS, and JavaScript. Stackoverflow is great for getting answers to questions, but it's also good for helping others with their questions as well.
+<p>I also use tools that let me test my code inside a web browser since it helps me make changes quickly. This site does provide a <a href="try-html.php">live testing tool</a> that does precisely that, and there are other tools available as well, such as <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>.
 <?php require_once ('foot.php'); ?>
 </body>
 </html>

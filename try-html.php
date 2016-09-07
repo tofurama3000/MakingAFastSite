@@ -29,9 +29,8 @@ h1{font-size:22pt;}
 	}
 }
 textarea{
-	border:2px solid #fff;
-	background:#200;
-	color:#fff;
+	border:2px solid #000;
+	padding: 10px;
 }
 </style>
 </head>
