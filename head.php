@@ -2,6 +2,7 @@
 body{
 	font-family: Calabri, Arial, Sans-Serif;
 }
+h2{clear:both;}
 #bg{
 	 width:100%;
 	 position:absolute;
@@ -44,6 +45,7 @@ body{
 	#nav{display:none;}
 	#navm{display:block;}
 }
+.cl{clear:both;}
 .c1{
 	float:left;
 	width:100%;
@@ -53,6 +55,8 @@ body{
 	width:48%;
 	padding:1%;
 }
+.c3{width:30%;float:left;padding:1%;}
+.r{float:right;}
 @media (max-width: 700px){
 	.c2Med{width:100% !important;padding:0;}
 	.topOffset{position:relative;}
