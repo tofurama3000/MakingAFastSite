@@ -85,3 +85,17 @@ a:hover{
 	padding-top:50px;
 }
 </style>
+<script>
+function load(a){
+	for(var i=0;i<a.length;++i)
+	{
+		var r=new XMLHttpRequest();
+		r.open("GET","/imgs.php?i="+a[i],true);
+		r.onreadystatechange=function(){
+			if (this.readyState != 4 || this.status != 200) return;
+			document.getElementById(this.responseURL.split('=')[1]).innerHTML=this.responseText;
+		};
+		r.send();
+	}
+}
+</script>
