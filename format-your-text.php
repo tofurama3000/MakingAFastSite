@@ -23,8 +23,8 @@
 </ul>
 <p>Below is an example
 <pre>
-&lt;b&gt;Welcome&lt;/b&gt; &lt;strong&gt;zombie&lt;/strong&gt; &lt;i&gt;survivors&lt;/i&gt;
-&lt;em&gt;Our&lt;/em&gt; &lt;small&gt;team&lt;/small&gt; &lt;mark&gt;will&lt;/mark&gt; &lt;del&gt;help&lt;/del&gt; &lt;ins&gt;guarantee&lt;/ins&gt; &lt;sub&gt;your&lt;/sub&gt; survival of &lt;sup&gt;any&lt;/sup&gt; zombie apocalypse!
+&lt;b&gt;Welcome&lt;/b&gt; to &lt;i&gt;my &lt;strong&lt;/i&gt;&gt;website&lt;/strong&gt;
+&lt;em&gt;I&lt;/em&gt; &lt;small&gt;love&lt;/small&gt; &lt;mark&gt;videogames&lt;/mark&gt;, &lt;del&gt;pizza&lt;/del&gt;, &lt;ins&gt;soda&lt;/ins&gt;, and &lt;sub&gt;cool&lt;/sub&gt; things! &lt;sup&gt;Please&lt;/sup&gt; have fun!
 </pre>
 <h1>Sections</h1>
 <p>At times our content is split into sections and has different levels of importance. For example, if we're making a home page for a sports team, we'll want a section for the team bio, a section for awards, and a section for athletes. In the team bio, we might have a mission statement, history, recent and upcoming games, etc.
