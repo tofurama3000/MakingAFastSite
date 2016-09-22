@@ -4,7 +4,7 @@
 <title>Make the Show Faster</title>
 <?php require_once('head.php'); ?>
 </head>
-<body>
+<body onload="load(['jshero']);">
 <div class="cntr">
 <?php require_once('menu.php'); ?>
 <h1>Remove Render Blocks</h1>
@@ -17,6 +17,7 @@
 <h1>Combine files server side</h1>
 <p>This doesn't do too much, but it's by far the easiest. Basically, you take the CSS that you're going to send and have it be taken from multiple requests to a single request. It probably won't be done in one response, but it'll probably be faster than 5 or 6 distinct requests.
 <h1>JavaScript To the Rescue?</h1>
+<span id="jshero"></span>
 <p>A simple way to solve this problem is to use JavaScript to load CSS asynchronously. This can be done by simply having a script that adds a &lt;link&gt; tag to the page. This will need to be after the page is loaded or through an asynchronous JavasScript script. But, we have a problem: not everyone can use JavaScript! That means you'll need to add a &lt;noscript&gt; tag to your page that has a &lt;link&gt; tag.
 <p>Another issue is you are deferring the loading of your CSS. Your page is loading without CSS - except the inline stuff. The solution (which will be the case for all solutions that really help with page speed) is to prioritize which CSS should be loaded initially and be render blocking, and which CSS should be deferred for loading. This can be relatively easy if you're pages are so big that the footer is never visible, or you have elements that are hidden until user interaction; you just don't load all the CSS that makes those pretty initially (but do load enough that hidden elements aren't visible).
 <p>Overall, it's a good choice to defer your CSS loading, but it does require some consideration in how you do it, and what you do it with.

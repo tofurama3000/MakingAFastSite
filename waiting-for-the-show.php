@@ -4,12 +4,13 @@
 <title>Waiting for the Show</title>
 <?php require_once('head.php'); ?>
 </head>
-<body onload="load(['tree'])">
+<body onload="load(['tv','tree'])">
 <div class="cntr">
 <?php require_once('menu.php'); ?>
-<h1>No Light, No Camera, No Action</h1>
+<h1 class="c2Med r">No Light, No Camera, No Action</h1>
+<span id="tv"></span>
 <p>Once we get the HTML page, we don't immediately pop it up on screen. No matter how much fun that sounds, doing that would be a nightmare for a user! Immagine if Google's homepage looked indistinguishable from a text file, or Amazon was just a long list of text links. Most users would be pretty upset (I say most since some are reminiscent of the DOS era). So, the browser has to wait, but what's it waiting for?
-<h1>Critical Rendering Path</h1>
+<h1 style="clear:none;">Critical Rendering Path</h1>
 <p>This is just a quick, summary where we gloss over just enough that you get the main idea. I strongly recommend reading <a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/?hl=en">Google's documentation</a> on this since it's A+ material.
 <h2>Trees</h2>
 <span id="tree"></span>

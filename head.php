@@ -55,11 +55,16 @@ h2{clear:both;}
 	width:48%;
 	padding:1%;
 }
-.c3{width:30%;float:left;padding:1%;}
+.c3,.c3Med,.c3MedO{width:30%;float:left;padding:1%;}
 .r{float:right;}
 @media (max-width: 700px){
-	.c2Med{width:100% !important;padding:0;}
+	.c2Med,.c3Med{width:100% !important;padding:0;}
+	.c2MedO,.c3MedO{display:none;}
+	.c3{width:100% !important;padding:0;}
 	.topOffset{position:relative;}
+}
+@media (max-width: 850px){
+	.c3,.c3Med,.c3MedO{width:50%;padding:0;}
 }
 #nav div,.c4{
 	float:left;

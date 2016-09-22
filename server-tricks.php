@@ -4,10 +4,11 @@
 <title>Server Tricks</title>
 <?php require_once('head.php'); ?>
 </head>
-<body>
+<body onload="load(['server']);">
 <div class="cntr">
 <?php require_once('menu.php'); ?>
 <h1>Server Tricks</h1>
+<span id="server"></span>
 <p>Not everything needs to be done in your content; sometimes your server can do just as much to make things smaller if not more. Take this site, it's mostly text, and it's mostly repeatable text. I use normal ASCII (i.e English letters, basic punctuation, spaces, and HTML characters). Also, English is fairly repeatable - just look at how many t's and e's that I used in this paragraph alone! This site would do really well if I did some basic compression, and since it doesn't change a lot it'd thrive from basic caching.
 <h2>Compress</h2>
 <p>Compression is one of those easy things to do that people forget about. It's easy in the sense that you change some server settings to do it. You'll need to check your server manual, but once you get it setup it'll compress almost all of your assets. GZip compression is the most common, and is the recommended option.
