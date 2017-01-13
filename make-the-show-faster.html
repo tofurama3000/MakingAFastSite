@@ -1,12 +1,12 @@
-<?php require_once("gzipstart.php"); ?>
+ 
 <html>
 <head>
 <title>Make the Show Faster</title>
-<?php require_once('head.php'); ?>
+<style>.cl,h2{clear:both}body{font-family:Calabri,Arial,Sans-Serif}#bg{width:100%;position:absolute;z-index:-9999;top:0;left:0;background:#040;height:50px}.cntr{margin:auto}@media (min-width:1200px){.cntr{width:50%}}@media (max-width:1199px){.cntr{width:60%}}@media (max-width:899px){.cntr{width:80%}}@media (max-width:500px){.cntr{width:90%}}#nav,#navm{height:20px;font-size:18pt;font-family:Gregoria,Times New Roman,Serif}#navm{display:none}.c1{float:left;width:100%}#navm div,.c2,.c2Med{float:left;width:48%;padding:1%}.c3,.c3Med,.c3MedO{width:30%;float:left;padding:1%}.r{float:right}@media (max-width:700px){#nav{display:none}#navm{display:block}.c2Med,.c3,.c3Med{width:100%!important;padding:0}.c2MedO,.c3MedO{display:none}.topOffset{position:relative}}@media (max-width:850px){.c3,.c3Med,.c3MedO{width:50%;padding:0}}#nav div,.c4{float:left;width:23%;padding:1%}a{text-decoration:none;color:green;font-weight:700}a:hover{text-decoration:underline}#nav a,#navm a{color:#eee}#nav a:hover{ color:#000; text-decoration:none; } #foot{ padding-top:50px; }</style>
 </head>
-<body onload="load(['jshero']);">
+<body>
 <div class="cntr">
-<?php require_once('menu.php'); ?>
+ <div id="bg"></div><div id="nav"><div><a href="index.html">Home</a></div><div><a href="optimization-list.html">Optimize</div><div><a href="html-list.html">HTML</a></div><div></div></div><div id="navm"><div><a href="index.html">Home</a></div><div><a href="tutorial-list.html">Learn</a></div></div><br>
 <h1>Remove Render Blocks</h1>
 <p>We already discussed the <code>async</code> property for JavaScript. Unfortunately, we don't have that option for CSS. This means we have a few options:
 <ul>
@@ -17,7 +17,7 @@
 <h1>Combine files server side</h1>
 <p>This doesn't do too much, but it's by far the easiest. Basically, you take the CSS that you're going to send and have it be taken from multiple requests to a single request. It probably won't be done in one response, but it'll probably be faster than 5 or 6 distinct requests.
 <h1>JavaScript To the Rescue?</h1>
-<span id="jshero"></span>
+<span id="jshero"><div class="c2Med r"><svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 465 264" version="1"><g transform="translate(-17.293441,-92.355252)"><path d="M149 116 255 113c0 0 104 24 123 84 14 46 51 84 78 109 27 25-44-7-84-6-42 1-43 31-61 4-9-14-27-57-69-93-19-16-104-35-99-62 6-27 5-32 5-32z" style="fill:#ff2a2a;stroke:#000"/></g><g transform="translate(-17.293441,-644.71741)"><text xml:space="preserve" x="31" y="875" transform="scale(0.98859056,1.0115411)" style="fill:#000;font-family:sans-serif;font-size:298;letter-spacing:0;line-height:125;word-spacing:0"><tspan x="31" y="875" style="-inkscape-font-specification:'."'".'Trebuchet MS'."'".';font-family:'."'".'Trebuchet MS'."'".'">JS</tspan></text></g></svg></div></span>
 <p>A simple way to solve this problem is to use JavaScript to load CSS asynchronously. This can be done by simply having a script that adds a &lt;link&gt; tag to the page. This will need to be after the page is loaded or through an asynchronous JavasScript script. But, we have a problem: not everyone can use JavaScript! That means you'll need to add a &lt;noscript&gt; tag to your page that has a &lt;link&gt; tag.
 <p>Another issue is you are deferring the loading of your CSS. Your page is loading without CSS - except the inline stuff. The solution (which will be the case for all solutions that really help with page speed) is to prioritize which CSS should be loaded initially and be render blocking, and which CSS should be deferred for loading. This can be relatively easy if you're pages are so big that the footer is never visible, or you have elements that are hidden until user interaction; you just don't load all the CSS that makes those pretty initially (but do load enough that hidden elements aren't visible).
 <p>Overall, it's a good choice to defer your CSS loading, but it does require some consideration in how you do it, and what you do it with.
@@ -36,9 +36,9 @@ media print{
 &lt;link href="print.css" media="print"&gt;
 </pre>
 <p>That's all that there is to it.
-<p>Now it's time to <a href="grow-small.php">Grow Small</a>
+<p>Now it's time to <a href="grow-small.html">Grow Small</a>
 </div>
-<?php require_once ('foot.php'); ?>
+<div style="margin-top:50px;font-size:10pt;clear:both;" class="cntr">&copy; 2016 Matthew Tolman</div>
 </body>
 </html>
-<?php require_once("gzipend.php"); ?>
+

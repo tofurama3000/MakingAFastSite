@@ -1,12 +1,12 @@
-<?php require_once("gzipstart.php"); ?>
+ 
 <html>
 <head>
 <title>Formatting Your Text</title>
-<?php require_once('head.php'); ?>
+<style>.cl,h2{clear:both}body{font-family:Calabri,Arial,Sans-Serif}#bg{width:100%;position:absolute;z-index:-9999;top:0;left:0;background:#040;height:50px}.cntr{margin:auto}@media (min-width:1200px){.cntr{width:50%}}@media (max-width:1199px){.cntr{width:60%}}@media (max-width:899px){.cntr{width:80%}}@media (max-width:500px){.cntr{width:90%}}#nav,#navm{height:20px;font-size:18pt;font-family:Gregoria,Times New Roman,Serif}#navm{display:none}.c1{float:left;width:100%}#navm div,.c2,.c2Med{float:left;width:48%;padding:1%}.c3,.c3Med,.c3MedO{width:30%;float:left;padding:1%}.r{float:right}@media (max-width:700px){#nav{display:none}#navm{display:block}.c2Med,.c3,.c3Med{width:100%!important;padding:0}.c2MedO,.c3MedO{display:none}.topOffset{position:relative}}@media (max-width:850px){.c3,.c3Med,.c3MedO{width:50%;padding:0}}#nav div,.c4{float:left;width:23%;padding:1%}a{text-decoration:none;color:green;font-weight:700}a:hover{text-decoration:underline}#nav a,#navm a{color:#eee}#nav a:hover{ color:#000; text-decoration:none; } #foot{ padding-top:50px; }</style>
 </head>
 <body>
 <div class="cntr">
-<?php require_once('menu.php'); ?>
+ <div id="bg"></div><div id="nav"><div><a href="index.html">Home</a></div><div><a href="optimization-list.html">Optimize</div><div><a href="html-list.html">HTML</a></div><div></div></div><div id="navm"><div><a href="index.html">Home</a></div><div><a href="tutorial-list.html">Learn</a></div></div><br>
 <h1>Text Formatting</h1>
 <p>At times you want to add specific formats to text, such as bolds, italics, strikethroughs, etc. This can be done with different tags. Each of these tags have a start tag, followed by the text to format, and then an end tag. If the end tag is left off, then text that you don't want to have that format will have it.
 <ul>
@@ -64,9 +64,8 @@ This is an item with a number
 &lt;/ol&gt;
 </pre>
 <p>Try adding a header to your page, followed by a paragraph or two about who you are and what you like to do. Use formatting to emphasize different parts of your text.
-<p>Continue with <a href="advanced-formatting.php">Advanced Formatting</a>.
+<p>Continue with <a href="advanced-formatting.html">Advanced Formatting</a>.
 </div>
-<?php require_once ('foot.php'); ?>
+<div style="margin-top:50px;font-size:10pt;clear:both;" class="cntr">&copy; 2016 Matthew Tolman</div>
 </body>
 </html>
-<?php require_once("gzipend.php"); ?>

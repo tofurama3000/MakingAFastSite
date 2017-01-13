@@ -1,11 +1,11 @@
-<?php require_once("gzipstart.php"); ?><html>
+ <html>
 <head>
 <title>Advanced Formatting</title>
-<?php require_once('head.php'); ?>
+<style>.cl,h2{clear:both}body{font-family:Calabri,Arial,Sans-Serif}#bg{width:100%;position:absolute;z-index:-9999;top:0;left:0;background:#040;height:50px}.cntr{margin:auto}@media (min-width:1200px){.cntr{width:50%}}@media (max-width:1199px){.cntr{width:60%}}@media (max-width:899px){.cntr{width:80%}}@media (max-width:500px){.cntr{width:90%}}#nav,#navm{height:20px;font-size:18pt;font-family:Gregoria,Times New Roman,Serif}#navm{display:none}.c1{float:left;width:100%}#navm div,.c2,.c2Med{float:left;width:48%;padding:1%}.c3,.c3Med,.c3MedO{width:30%;float:left;padding:1%}.r{float:right}@media (max-width:700px){#nav{display:none}#navm{display:block}.c2Med,.c3,.c3Med{width:100%!important;padding:0}.c2MedO,.c3MedO{display:none}.topOffset{position:relative}}@media (max-width:850px){.c3,.c3Med,.c3MedO{width:50%;padding:0}}#nav div,.c4{float:left;width:23%;padding:1%}a{text-decoration:none;color:green;font-weight:700}a:hover{text-decoration:underline}#nav a,#navm a{color:#eee}#nav a:hover{ color:#000; text-decoration:none; } #foot{ padding-top:50px; }</style>
 </head>
 <body>
 <div class="cntr">
-<?php require_once('menu.php'); ?>
+ <div id="bg"></div><div id="nav"><div><a href="index.html">Home</a></div><div><a href="optimization-list.html">Optimize</div><div><a href="html-list.html">HTML</a></div><div></div></div><div id="navm"><div><a href="index.html">Home</a></div><div><a href="tutorial-list.html">Learn</a></div></div><br>
 <h1>Computer Code</h1>
 <p>At times we want to format computer code, or keyboard input and computer output. This is great for technical information, such as how to login to a computer, how to setup an Arduino, or even tutorials on how to make a website.
 <p>There are several tags, which tend to give the same formatting result in most browsers (which is why people will use them interchangeably). However, browsers <i>may</i> display them differently, and some might even do special things to try to be helpful. For that reason, all of them will be listed here.
@@ -36,8 +36,8 @@ This preformatted text has
 5&lt;var&gt;x&lt;/var&gt; + 3 = 28
 </pre>
 <p>Try adding some preformatted text to your web page.
-<p>Next, we'll learn how to <a href="links.php">Link Pages</a>.
+<p>Next, we'll learn how to <a href="links.html">Link Pages</a>.
 </div>
-<?php require_once ('foot.php'); ?>
+<div style="margin-top:50px;font-size:10pt;clear:both;" class="cntr">&copy; 2016 Matthew Tolman</div>
 </body>
-</html><?php require_once("gzipend.php"); ?>
+</html>

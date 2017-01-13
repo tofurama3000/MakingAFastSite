@@ -1,0 +1,35 @@
+ 
+<html>
+<head>
+<title>Server Tricks</title>
+<style>.cl,h2{clear:both}body{font-family:Calabri,Arial,Sans-Serif}#bg{width:100%;position:absolute;z-index:-9999;top:0;left:0;background:#040;height:50px}.cntr{margin:auto}@media (min-width:1200px){.cntr{width:50%}}@media (max-width:1199px){.cntr{width:60%}}@media (max-width:899px){.cntr{width:80%}}@media (max-width:500px){.cntr{width:90%}}#nav,#navm{height:20px;font-size:18pt;font-family:Gregoria,Times New Roman,Serif}#navm{display:none}.c1{float:left;width:100%}#navm div,.c2,.c2Med{float:left;width:48%;padding:1%}.c3,.c3Med,.c3MedO{width:30%;float:left;padding:1%}.r{float:right}@media (max-width:700px){#nav{display:none}#navm{display:block}.c2Med,.c3,.c3Med{width:100%!important;padding:0}.c2MedO,.c3MedO{display:none}.topOffset{position:relative}}@media (max-width:850px){.c3,.c3Med,.c3MedO{width:50%;padding:0}}#nav div,.c4{float:left;width:23%;padding:1%}a{text-decoration:none;color:green;font-weight:700}a:hover{text-decoration:underline}#nav a,#navm a{color:#eee}#nav a:hover{ color:#000; text-decoration:none; } #foot{ padding-top:50px; }</style>
+</head>
+<body>
+<div class="cntr">
+ <div id="bg"></div><div id="nav"><div><a href="index.html">Home</a></div><div><a href="optimization-list.html">Optimize</div><div><a href="html-list.html">HTML</a></div><div></div></div><div id="navm"><div><a href="index.html">Home</a></div><div><a href="tutorial-list.html">Learn</a></div></div><br>
+<h1>Server Tricks</h1>
+<span id="server"><div class="c2Med r"><svg viewBox="0 0 710 404" width="100%" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-30.214286 -46.147918)"><path d="m50.721298 66.65493h261.41452v362.84311h-261.41452z" fill="#e9c6af" stroke="#000" stroke-linecap="round" stroke-width="1.014024"/><path d="m66.428574 91.647919h228.57143v57.142857h-228.57143z" fill="none" stroke="#000" stroke-linecap="round"/><path d="m65.714287 156.64792h228.57143v57.142857h-228.57143z" fill="none" stroke="#000" stroke-linecap="round"/><path d="m66.785713 226.29077h228.57143v57.142857h-228.57143z" fill="none" stroke="#000" stroke-linecap="round"/><path d="m66.071426 291.29077h228.57143v57.142857h-228.57143z" fill="none" stroke="#000" stroke-linecap="round"/><path d="m66.785713 357.71936h228.57143v57.142857h-228.57143z" fill="none" stroke="#000" stroke-linecap="round"/><path d="m84.28571 141.64792h177.85715" fill="none" fill-rule="evenodd" stroke="#000"/><path d="m87.14286 205.21935h170.71428" fill="none" fill-rule="evenodd" stroke="#000"/><path d="m101.42857 274.50506h152.14286" fill="none" fill-rule="evenodd" stroke="#000"/><path d="m91.42857 335.21935h167.14286" fill="none" fill-rule="evenodd" stroke="#000"/><path d="m99.28571 407.3622h140" fill="#0f0" fill-rule="evenodd" stroke="#000"/><circle cx="275.71429" cy="403.79077" fill="#0f0" r="6.428571" stroke="#000" stroke-linecap="round"/><circle cx="277.85715" cy="335.21933" fill="#0f0" r="6.428571" stroke="#000" stroke-linecap="round"/><circle cx="277.14285" cy="270.21933" fill="#0f0" r="6.428571" stroke="#000" stroke-linecap="round"/><circle cx="277.85715" cy="201.64792" fill="#0f0" r="6.428571" stroke="#000" stroke-linecap="round"/><circle cx="280.71429" cy="140.21935" fill="#0f0" r="6.428571" stroke="#000" stroke-linecap="round"/><text font-family="sans-serif" font-size="40" letter-spacing="0" line-height="125%" text-anchor="middle" word-spacing="0" x="543.07758" xml:space="preserve" y="128.07649"><tspan x="543.07758" y="128.07649">For my next trick,</tspan><tspan x="550.10883" y="178.07649">I'll calculate the </tspan><tspan x="543.07758" y="228.07649">square root of 43</tspan><tspan x="543.07758" y="278.07648">while fetching</tspan><tspan x="543.07758" y="328.07648">your email!</tspan></text><path d="m376.42857 249.50506c-15.71428 50-59.28571 38.57143-59.28571 38.57143" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="6"/></g></svg></div></span>
+<p>Not everything needs to be done in your content; sometimes your server can do just as much to make things smaller if not more. Take this site, it's mostly text, and it's mostly repeatable text. I use normal ASCII (i.e English letters, basic punctuation, spaces, and HTML characters). Also, English is fairly repeatable - just look at how many t's and e's that I used in this paragraph alone! This site would do really well if I did some basic compression, and since it doesn't change a lot it'd thrive from basic caching.
+<h2>Compress</h2>
+<p>Compression is one of those easy things to do that people forget about. It's easy in the sense that you change some server settings to do it. You'll need to check your server manual, but once you get it setup it'll compress almost all of your assets. GZip compression is the most common, and is the recommended option.
+<p>Yes, I said almost. A lot of servers don't mess with what a script (like CGI or PHP) does. The reason is that the server has no idea what's coming out, and by compressing the scrypt it might break something (like, double compression on the server, but the client's only told to decompress once). This means that if you want to do compression of dynamically generated content, you'll need to do a little more work in your scripts.
+<p>This site uses PHP to bring in the header, footer, menu, and to do GZip compression. I do my GZip compression as follows:
+<pre>
+&lt;?php
+if(!ob_start("ob_gzhandler")) ob_start();
+?&gt;
+<i>...
+Page content goes here
+...</i>
+&lt;?php
+ob_flush();
+?&gt;
+</pre>
+<p>Pretty simple, right? That's great for anything that's generated from PHP scripts (I usually run mine in Apache). For non-PHP script files (such as images), I use Apache compression settings instead. You'll need to check with your server technology to see what you need to do to enable compression for your site.
+<h2>Caching</h2>
+<p>Remember how the client requests the server for what it doesn't have? As it turns out, the client also has short term memory loss by default: it doesn't remember what it just saw. This is because clients are made to expect that the same asset will be different the next time it asks, and if it thinks it'll be different it won't remember. However, if we enable caching, then the server will tell clients that it should remember certain files and assets since they won't change that often. Once this is in place, clients will begin to remember files from your site, and this means it won't be spending as much time downloading large assets from your site over and over and over again.
+<p>Back to science with <a href="measuring.html">Measuring</a>.
+</div>
+<div style="margin-top:50px;font-size:10pt;clear:both;" class="cntr">&copy; 2016 Matthew Tolman</div>
+</body>
+</html>

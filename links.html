@@ -1,8 +1,8 @@
-<?php require_once("gzipstart.php"); ?>
+ 
 <html>
 <head>
 <title>Links</title>
-<?php require_once('head.php'); ?>
+<style>.cl,h2{clear:both}body{font-family:Calabri,Arial,Sans-Serif}#bg{width:100%;position:absolute;z-index:-9999;top:0;left:0;background:#040;height:50px}.cntr{margin:auto}@media (min-width:1200px){.cntr{width:50%}}@media (max-width:1199px){.cntr{width:60%}}@media (max-width:899px){.cntr{width:80%}}@media (max-width:500px){.cntr{width:90%}}#nav,#navm{height:20px;font-size:18pt;font-family:Gregoria,Times New Roman,Serif}#navm{display:none}.c1{float:left;width:100%}#navm div,.c2,.c2Med{float:left;width:48%;padding:1%}.c3,.c3Med,.c3MedO{width:30%;float:left;padding:1%}.r{float:right}@media (max-width:700px){#nav{display:none}#navm{display:block}.c2Med,.c3,.c3Med{width:100%!important;padding:0}.c2MedO,.c3MedO{display:none}.topOffset{position:relative}}@media (max-width:850px){.c3,.c3Med,.c3MedO{width:50%;padding:0}}#nav div,.c4{float:left;width:23%;padding:1%}a{text-decoration:none;color:green;font-weight:700}a:hover{text-decoration:underline}#nav a,#navm a{color:#eee}#nav a:hover{ color:#000; text-decoration:none; } #foot{ padding-top:50px; }</style>
 <style>
 .schema{
 	color:#0a0;
@@ -51,7 +51,7 @@ function smo(){
 </head>
 <body onload="smo()">
 <div class="cntr">
-<?php require_once('menu.php'); ?>
+ <div id="bg"></div><div id="nav"><div><a href="index.html">Home</a></div><div><a href="optimization-list.html">Optimize</div><div><a href="html-list.html">HTML</a></div><div></div></div><div id="navm"><div><a href="index.html">Home</a></div><div><a href="tutorial-list.html">Learn</a></div></div><br>
 <h1>Understanding URLs</h1>
 <p>Before we go any further, we need to discuss a very important topic that we have neglected. This is URLs (Uniform Resource Locator). If you have ever browsed the web, then you have worked with URLs, even if you didn't know it. We usually call these "links", "sites", "pages", etc. It's all of the text in the bar at the top of your web browser (on mobile it's often hidden until you pull it up). Basically, what it does is it tells the browser where to go on the internet to get something and then show it to you. URLs have five basic components:
 <ul>
@@ -90,9 +90,9 @@ function smo(){
 <p>Sometimes you want a link to open in a new window or tab, that way users can still see what's on your site. This can be done with the target property. Below is a list of some of the different values:
 <ul><li><b>_blank</b> opens in a new window or tab</li><li><b>_self</b> opens in the current window or frame - default</li><li><b>_full</b> opens in the current window</li></ul>
 <p>Try creating another HTML file called "page2.html" and add a link to it on your website.
-<p>Congratulations! You finished our tutorial! To learn more, see <a href="continue-html.php">Continuing with HTML</a>.
+<p>Congratulations! You finished our tutorial! To learn more, see <a href="continue-html.html">Continuing with HTML</a>.
 </div>
-<?php require_once ('foot.php'); ?>
+<div style="margin-top:50px;font-size:10pt;clear:both;" class="cntr">&copy; 2016 Matthew Tolman</div>
 </body>
 </html>
-<?php require_once("gzipend.php"); ?>
+

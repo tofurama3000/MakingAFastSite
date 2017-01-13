@@ -1,16 +1,16 @@
-<?php require_once("gzipstart.php"); ?>
+ 
 <html>
 <head>
 <title>Asset Management</title>
-<?php require_once('head.php'); ?>
+<style>.cl,h2{clear:both}body{font-family:Calabri,Arial,Sans-Serif}#bg{width:100%;position:absolute;z-index:-9999;top:0;left:0;background:#040;height:50px}.cntr{margin:auto}@media (min-width:1200px){.cntr{width:50%}}@media (max-width:1199px){.cntr{width:60%}}@media (max-width:899px){.cntr{width:80%}}@media (max-width:500px){.cntr{width:90%}}#nav,#navm{height:20px;font-size:18pt;font-family:Gregoria,Times New Roman,Serif}#navm{display:none}.c1{float:left;width:100%}#navm div,.c2,.c2Med{float:left;width:48%;padding:1%}.c3,.c3Med,.c3MedO{width:30%;float:left;padding:1%}.r{float:right}@media (max-width:700px){#nav{display:none}#navm{display:block}.c2Med,.c3,.c3Med{width:100%!important;padding:0}.c2MedO,.c3MedO{display:none}.topOffset{position:relative}}@media (max-width:850px){.c3,.c3Med,.c3MedO{width:50%;padding:0}}#nav div,.c4{float:left;width:23%;padding:1%}a{text-decoration:none;color:green;font-weight:700}a:hover{text-decoration:underline}#nav a,#navm a{color:#eee}#nav a:hover{ color:#000; text-decoration:none; } #foot{ padding-top:50px; }</style>
 </head>
-<body onload="load(['freelib'])">
+<body>
 <div class="cntr">
-<?php require_once('menu.php'); ?>
+ <div id="bg"></div><div id="nav"><div><a href="index.html">Home</a></div><div><a href="optimization-list.html">Optimize</div><div><a href="html-list.html">HTML</a></div><div></div></div><div id="navm"><div><a href="index.html">Home</a></div><div><a href="tutorial-list.html">Learn</a></div></div><br>
 <h1>Assets</h1>
 <p>We all have assets like CSS files, Images, and sometimes fonts or Flash. But these can take up a lot of space if we're not careful. So, what do we do to work with this?
 <h2>CSS and JavaScript</h2>
-<span id="freelib"></span>
+<span id="freelib"><div class="c2Med r"><svg viewBox="0 0 244 271" width="100%" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-24.285715 -757.61245)"><g fill="none" fill-rule="evenodd" stroke="none" stroke-linecap="butt" stroke-linejoin="round"><path d="m28.285716 958.74224l107.142854 64.04846 128.40877-30.49051-155.77832-41.23238z" fill="#afafde" points="135.42857 1022.7907 263.83734 992.30019 108.05902 951.06781 28.285716 958.74224"/><path d="m28.285716 841.36216v117.38008l79.773304-7.67443v-102.60069z" fill="#353564" points="28.285716 958.74224 108.05902 951.06781 108.05902 848.46712 28.285716 841.36216"/><path d="m108.05902 848.46712l155.77832-54.93358v198.76665l-155.77832-41.23238z" fill="#e9e9ff" points="263.83734 793.53354 263.83734 992.30019 108.05902 951.06781 108.05902 848.46712"/><path d="m28.285716 841.36216l107.142854-81.46398 128.40877 33.63536-155.77832 54.93358z" fill="#4d4d9f" points="135.42857 759.89818 263.83734 793.53354 108.05902 848.46712 28.285716 841.36216"/><path d="m135.42857 759.89818v262.89252l128.40877-30.49051v-198.76665z" fill="#d7d7ff" points="135.42857 1022.7907 263.83734 992.30019 263.83734 793.53354 135.42857 759.89818"/><path d="m28.285716 841.36216l107.142854-81.46398v262.89252l-107.142854-64.04846z" fill="#8686bf" points="135.42857 759.89818 135.42857 1022.7907 28.285716 958.74224 28.285716 841.36216"/></g><text font-family="sans-serif" font-size="23.872007" letter-spacing="0" line-height="125%" transform="matrix(.90028676 .1590055 0 1.1107572 0 0)" word-spacing="0" x="157.2388" xml:space="preserve" y="706.9408"><tspan x="157.2388" y="706.9408">My Library</tspan><tspan x="157.2388" y="736.78082">That does</tspan><tspan x="157.2388" y="766.62079">Everything!</tspan></text><text font-family="sans-serif" font-size="26.664499" letter-spacing="0" line-height="125%" transform="matrix(.90102558 -.15887512 0 1.1098464 0 0)" word-spacing="0" x="165.07915" xml:space="preserve" y="925.31873"><tspan x="165.07915" y="925.31873">It's Free?</tspan></text></g></svg></div></span>
 <p>These two are sometimes the biggest culprits of our day. The code is written in text files and we assume text files are so small that it's free. Due to that belief, we write a lot of code, import a ton of libraries, and write a lot more code, generally splitting things into different files for reuse. Sure, it'll probably stay under 4MB, but we forget that file size isn't what really slows us down with text files, it's the requesting for them. When we see the load times, we tend to scratch our heads and wonder why it takes so long.
 <p>The truth is, there are no "free" assets or "free" resources. Everything costs space, time, and are sometimes blocking critical render paths. This means we need to be careful. At the same time, please use assets!. I don't want to scare you out of using CSS or JavaScript, or even 3rd party libraries; they're all great, I use them a lot, and they make web development easier. I just want you to think before you start loading jQuery, Angular, React, Bootstrap, and Backbone all on one page. When you're making decisions about what techniques and libraries to use on a web page, take time to answer the following questions:
 <ol><li>What am I trying to accomplish?</li><li>How does _____ accomplish that?<br>(importing library/writing JS code/writing CSS code)</li><li>What resources are already available to me on that page?<br>(ex. what libraries are already being used? how is it structured? Am I able to use server-side scripts like PHP instead?)</li><li>What other ways could I do this with what I have?<br>(ex. iframes, HTML, server-side scripts, delayed loading, web sockets)</li><li>What is the best way I could do this with what I now have and know</li></ol>
@@ -33,9 +33,8 @@
 <p>Java applets have also been going through their phase-out phases and are rather rare to see. Plugins and other technologies have also seen similar trends.
 <p>This isn't just since people mark them as "bad", but it's also due to better alternatives being more popular and more consistent with the advent of HTML5. HTML5 allow cross-browser capabilities for complex animations, games, and 3D graphics without plugins and with fewer security concerns, so major browsers are using it by default. I strongly recommend looking into these technologies and setup a phase-out timeline for your current content.
 <p>If you're still insistent, then answer the questions in the CSS and JavaScript section regarding the technologies you're using and look into the different ways to optimize that form of media.
-<p>Coming up Next, <a href="server-tricks.php">Server Tricks</a>.
+<p>Coming up Next, <a href="server-tricks.html">Server Tricks</a>.
 </div>
-<?php require_once ('foot.php'); ?>
+<div style="margin-top:50px;font-size:10pt;clear:both;" class="cntr">&copy; 2016 Matthew Tolman</div>
 </body>
 </html>
-<?php require_once("gzipend.php"); ?>

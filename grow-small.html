@@ -1,14 +1,14 @@
-<?php require_once("gzipstart.php"); ?>
+ 
 <html>
 <head>
 <title>Grow Small</title>
-<?php require_once('head.php'); ?>
+<style>.cl,h2{clear:both}body{font-family:Calabri,Arial,Sans-Serif}#bg{width:100%;position:absolute;z-index:-9999;top:0;left:0;background:#040;height:50px}.cntr{margin:auto}@media (min-width:1200px){.cntr{width:50%}}@media (max-width:1199px){.cntr{width:60%}}@media (max-width:899px){.cntr{width:80%}}@media (max-width:500px){.cntr{width:90%}}#nav,#navm{height:20px;font-size:18pt;font-family:Gregoria,Times New Roman,Serif}#navm{display:none}.c1{float:left;width:100%}#navm div,.c2,.c2Med{float:left;width:48%;padding:1%}.c3,.c3Med,.c3MedO{width:30%;float:left;padding:1%}.r{float:right}@media (max-width:700px){#nav{display:none}#navm{display:block}.c2Med,.c3,.c3Med{width:100%!important;padding:0}.c2MedO,.c3MedO{display:none}.topOffset{position:relative}}@media (max-width:850px){.c3,.c3Med,.c3MedO{width:50%;padding:0}}#nav div,.c4{float:left;width:23%;padding:1%}a{text-decoration:none;color:green;font-weight:700}a:hover{text-decoration:underline}#nav a,#navm a{color:#eee}#nav a:hover{ color:#000; text-decoration:none; } #foot{ padding-top:50px; }</style>
 </head>
-<body onload="load(['losinginches'])">
+<body>
 <div class="cntr">
-<?php require_once('menu.php'); ?>
+ <div id="bg"></div><div id="nav"><div><a href="index.html">Home</a></div><div><a href="optimization-list.html">Optimize</div><div><a href="html-list.html">HTML</a></div><div></div></div><div id="navm"><div><a href="index.html">Home</a></div><div><a href="tutorial-list.html">Learn</a></div></div><br>
 <h1>Growing Small</h1>
-<span id="losinginches"></span>
+<span id="losinginches"><div class="c2Med r"><svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 456 497" version="1.1"><style>.s0{fill:none;stroke-linecap:round;stroke-width:4;stroke:#000;}.s1{fill:none;stroke-width:4;stroke:#000;}.s2{-inkscape-font-specification:sans-serif;font-family:sans-serif;font-size:30;}</style><g transform="translate(-269.5,7.5617856)"><circle cx="360" cy="140.2" r="70" class="s0"/><circle cx="635" cy="262.4" r="70" class="s0"/><path d="m362.1 210.3 0 160-66.8 66.8M362.9 370.3l41.4 71.8M307.1 259.6l119.3 0M635.7 331.7l0 65.7-66.8 66.8M636.4 397.4l41.4 71.8M580.7 352.4l119.3 0" class="s1"/><text xml:space="preserve" x="559.2" y="51.4" style="fill:#000;font-family:sans-serif;font-size:22.2;letter-spacing:0;line-height:125;text-align:center;text-anchor:middle;word-spacing:0"><tspan x="559.2" y="51.4" class="s2">You won't believe it,</tspan><tspan x="559.2" y="88.9" class="s2">I lost 3" yesterday!</tspan></text><path d="m498.6 96.5c3.6 37.7-66.2 39.9-66.2 39.9" class="s1"/><text xml:space="preserve" x="432.2" y="184.1" style="fill:#000;font-family:sans-serif;font-size:22.5;letter-spacing:0;line-height:125;word-spacing:0"><tspan x="432.2" y="184.1" class="s2">Well, I lost 12.</tspan></text><path d="m500.7 207.4c0 42.9 59.3 47.1 59.3 47.1" class="s1"/><flowRoot xml:space="preserve" style="fill:black;font-family:sans-serif;font-size:40;letter-spacing:0;line-height:125;word-spacing:0"><flowRegion><rect width="635" height="465.7" x="-95" y="22.7"/></flowRegion></flowRoot></g></svg></div></span>
 <p>As the internet's matured, pages have gotten bigger and bigger. This means more messages needing to be sent, more time waiting for important content, and more loads on both clients and servers. Yet, fast sites tend to grow larger slower than contemporaries - for the initial loads at least. You don't have to get small all at once, but there are some tricks that you can use to decrease the size of downloads for clients.
 <h2 style="clear:none;">Remove Duplicate Duplicate Data</h2>
 <p>We're all guilty of creating duplicate code, and duplicate data, and duplicate content, including me. Yet, we sometimes forget how much that duplication costs us. Just look at the above header. I have the word "duplicate" twice. How much does that cost? Each letter in that word is a character, and we'll say each character is 1 byte. So, by writing "duplicate" twice in the header, I cost myself an extra 10 bytes! (remember to count the extra whitespace).
@@ -51,9 +51,8 @@
 <li>2) Does it break anything? Maybe for some reason our CSS only works with the second example, then we'll need to stay with it. Likewise, if our CSS only works with the first example for some reason, then we'll need to stay with it. If it works with both, it doesn't matter. This requires experimentation to decide.</li>
 <li>3) What about maintainability? With the first one it's easy to see what code affects what elements and it's really easy to make a change that affects only one class. However, the second example includes the nicity that the classes are grouped together, so if we want to make a change that affects both it's really simple. It all depends on if the classes are supposed to be similar in their CSS or not.</li></ol>
 <p>Going small is a strange combination of art and science. Small code isn't always the "best" option since it can cause maintainability issues or reliability issues. At the same point, we do want code to be small enough that we can keep the load times for a site low. The trick is to think about what you're doing and understand its potential impact.
-<p>Now let's get organized with <a href="asset-management.php">Asset Management</a>.
+<p>Now let's get organized with <a href="asset-management.html">Asset Management</a>.
 </div>
-<?php require_once ('foot.php'); ?>
+<div style="margin-top:50px;font-size:10pt;clear:both;" class="cntr">&copy; 2016 Matthew Tolman</div>
 </body>
 </html>
-<?php require_once("gzipend.php"); ?>
